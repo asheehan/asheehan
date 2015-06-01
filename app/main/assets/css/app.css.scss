@@ -1,0 +1,64 @@
+// Place your apps css here
+html, body {
+  color: #fff;
+  font-family: Ubuntu, Arial;
+  height: 100%;
+  min-height:100%;
+  background: url("/assets/images/sears_tower_cartoon_scaled.png") fixed bottom right no-repeat,
+  linear-gradient(to bottom, #57c1eb 0%,#246fa8 100%) fixed no-repeat;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+  background-color: #000;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #000;
+}
+
+.nav-pills {
+  &.dark {
+    a:hover {
+      background-color: #666;
+    }
+    .active a:hover {
+      background-color: #000;
+    }
+    .active a {
+      background-color: #000;
+    }
+  }
+}
+
+.header {
+  h1 {
+    font-size: 32px;
+  }
+  border-bottom: none;
+}
+
+#content {
+  color: #000;
+  min-height: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  opacity: .9;
+  padding: 20px 15px;
+  margin-bottom: 30px;
+  h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 0 5px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer {
+  height: 4em;
+}

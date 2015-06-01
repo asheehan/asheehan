@@ -1,0 +1,26 @@
+<:Title>
+    {{ view main_path, "title", {controller_group: 'main'} }}
+
+<:Body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right dark">
+                <:nav href="/">Home</:nav>
+                <:nav href="/details">Details</:nav>
+                <:nav href="/notes">Notes</:nav>
+            </ul>
+            <h1 class="title"><a href="/">asheehan.io</a></h1>
+        </div>
+
+        <:volt:notices/>
+
+        <div id="content">
+            {{ view main_path, 'body', {controller_group: 'main'} }}
+        </div>
+
+    </div>
+
+    <:Nav>
+        <li class="{{ if active_tab? }}active{{ end }}">
+            <a href="{{ attrs.href }}">{{ yield }}</a>
+        </li>
